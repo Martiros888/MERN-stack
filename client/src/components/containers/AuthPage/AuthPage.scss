@@ -1,0 +1,40 @@
+@import '../../scssvariables/variables.scss';
+
+.div {
+    p{
+        display: block;
+        cursor: pointer;
+        width: 5vw;
+        height: 2vw;
+    }
+    width: 100%;
+    @include center;
+    flex-direction: column;
+    .registracia {
+        @include center;
+        flex-direction: column;
+        box-shadow: 0 0 7px black;
+        width: 30vw;
+        height: 30vw;
+        input {
+            width: 50%;
+            height: 2vw;
+            margin: 1vw;
+        }
+
+    }
+    .login{
+        @include center;
+        flex-direction: column;
+        box-shadow: 0 0 7px black;
+        width: 30vw;
+        height: 30vw;
+        input {
+            width: 50%;
+            height: 2vw;
+            margin: 1vw;
+            border: none;
+            box-shadow: 0 0 4px black;
+        }
+    }
+}

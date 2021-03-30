@@ -1,0 +1,36 @@
+@mixin whb($width, $height, $background-color) {
+    width: $width;
+    height: $height;
+    background-color: $background-color;
+}
+
+@mixin text($col, $fz) {
+    color: $col;
+    font-size: $fz;
+}
+
+@mixin border($top, $right, $bottom, $left) {
+    border: {
+        top: $top;
+        right: $right;
+        bottom: $bottom;
+        left: $left;
+    }
+}
+
+@mixin absol($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex {
+    @include center;
+    flex-direction: column;
+}

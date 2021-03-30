@@ -1,0 +1,1 @@
+export type actionTypes = 'TRUE' | 'URL' | 'DATA'
